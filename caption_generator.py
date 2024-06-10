@@ -42,11 +42,11 @@ def externel_caption_generate(image_name):
     img = img_to_array(img)
     img = img.reshape((1,img.shape[0],img.shape[1],img.shape[2]))
     img = preprocess_input(img)
-    modelvgg = load_model("D:\\SEM6\\DL\\project\\model1.h5")
+    modelvgg = load_model("\model1.h5")
     model=VGG16()
     fe = Model(inputs=model.input, outputs=model.layers[-2].output)
     ext_feature = fe.predict(img, verbose=0)
-    tokenizer=pickle.load(open("D:\\SEM6\\DL\\project\\token.pkl","rb"))
+    tokenizer=pickle.load(open("\token.pkl","rb"))
     max_caption_len=34
     y_pred = prediction(modelvgg,ext_feature,tokenizer,max_caption_len)
 
