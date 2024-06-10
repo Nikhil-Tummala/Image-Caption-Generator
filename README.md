@@ -32,6 +32,8 @@ The Image Caption Generator project leverages deep learning techniques to analyz
 - `model1.h5`: Pre-trained model file.
 - `token.pkl`: Tokenizer file.
 
+## Dataset
+["https://www.kaggle.com/datasets/srbhshinde/flickr8k-sau"]
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
