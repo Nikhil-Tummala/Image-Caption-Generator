@@ -6,4 +6,4 @@ pandas
 scikit-learn
 Pillow
 keras
-PIL
+joblib
