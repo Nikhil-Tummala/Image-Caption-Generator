@@ -26,10 +26,6 @@ def generate_audio(text):
     engine.runAndWait()
 
 
-def generate_audio_in_memory(caption):
-    audio_data = generate_audio(caption)
-    st.audio(audio_data, format="audio/wav", start_time=0)
-
 
 def idx_to_word(integer,tokenizer):
     for word,index in tokenizer.word_index.items():
@@ -83,9 +79,8 @@ def main():
         caption = externel_caption_generate(uploaded_file)
         st.write("Description Of Image:", caption)
 
-        generate_audio_in_memory(caption)
-        if st.button("Play Audio"):
-            generate_audio_in_memory(caption)
+        generate_audio(caption)
+        
         
 
 if __name__ == "__main__":
