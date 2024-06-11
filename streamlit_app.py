@@ -12,20 +12,6 @@ from tensorflow.keras.layers import Input,Dense,LSTM,Embedding,Dropout,add
 import pickle
 import pyttsx3
 
-def generate_audio(text):
-    # Initialize the text-to-speech engine
-    engine = pyttsx3.init()
-
-    rate = engine.getProperty('rate')
-    engine.setProperty('rate', rate - 50)  
-
-    # Set the voice (optional)
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[0].id) 
-    engine.say(text)
-    engine.runAndWait()
-
-
 
 def idx_to_word(integer,tokenizer):
     for word,index in tokenizer.word_index.items():
@@ -79,7 +65,6 @@ def main():
         caption = externel_caption_generate(uploaded_file)
         st.write("Description Of Image:", caption)
 
-        generate_audio(caption)
         
         
 
