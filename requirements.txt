@@ -7,3 +7,5 @@ scikit-learn
 Pillow
 keras
 joblib
+h5py
+imageio
