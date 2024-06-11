@@ -23,6 +23,9 @@ The Image Caption Generator project leverages deep learning techniques to analyz
    - Use the file uploader to upload an image for caption generation.
    - After uploading the image, the app will display the generated caption and provide an audio playback option.
 
+2. **Try the app online:**
+   You can try the app online by visiting [this link](https://image-caption-generator-19.streamlit.app).
+
 ## File Descriptions
 
 - `app.py`: Main file to run the Streamlit app.
@@ -38,7 +41,6 @@ The dataset used for training and evaluation can be found [here](https://www.kag
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
 
 ## Acknowledgements
 
